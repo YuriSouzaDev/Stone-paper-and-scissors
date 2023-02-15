@@ -1,0 +1,151 @@
+:root {
+    --basic-white: #ffffff;
+    --basic-black: #000000;
+    --black-light: #b8afaf;
+    --basic-red: #ff0000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    background-color: var(--basic-black);
+    color: #ffffff;
+    width: 100%;
+}
+
+/* HEAD */
+
+.head {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    background-color: var(--basic-black);
+    max-width: auto;
+}
+
+.tittle {
+    font-family: 'Fira Code', monospace;
+    color: var(--basic-white);
+    
+}
+/* MAIN */
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0px;
+    height: 80px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px 50px;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+
+.button-player {
+    background-color: var(--basic-black);
+    border-radius: 50%;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 160px;
+    height: 160px;
+    font-size: 20px;
+    border-radius: 40%;
+    color: var(--basic-white);
+    border: solid 0.3rem #ffffff;
+    cursor: pointer;
+}
+
+#btn:hover,
+button:hover {
+    color: var(--black-light);
+}
+
+.btnRock,
+.btnPaper,
+.btnScissor {
+    font-size: 50px;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px 0px;
+    justify-content: center;
+    height: 100px;
+}
+
+.score-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100px;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+
+.score-info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.scoreFinal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    font-size: 20px;
+    color: var(--basic-white);
+}
+
+.playAgain {
+    background-color: var(--basic-black);
+    color: var(--basic-white);
+    padding: 10px;
+    visibility: hidden;
+    cursor: pointer;
+    width: 200px;
+    font-size: 20px;
+    color: var(--basic-white);
+    border: solid 0.2rem #ffffff;
+
+}
+/* FOOTER */
+.footer {
+    position: fixed;
+    display: flex;
+    align-self: baseline;
+    text-align: center;
+    justify-content: center;
+    bottom: 0px;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.fa-gitbub {
+    background-color: var(--basic-black);
+    font-size: 24px;
+}

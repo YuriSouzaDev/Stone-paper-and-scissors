@@ -4,10 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Rock, paper and scissor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="head">
+        <h1 class="tittle">ROCK PAPER SCISSORS</h1>
+    </div>
+    <div class="info">
+        <div class="choose">
+            <h2>Choose one option</h2>
+        </div>
+        <div class="scoreInfo">
+            <h3>First to score 5 points win the game</h3>
+        </div>
+    </div>
+    <div class="main">
+        <button class="button-player" id="btn" value="rock">
+            <div>
+                <div class="btnRock">✊</div>
+                <h3>ROCK</h3>
+            </div>
+        </button>
+        <button class="button-player" id="btn" value="paper">
+            <div>
+                <div class="btnPaper">✋</div>
+                <h3>PAPER</h3>
+            </div>
+        </button>
+        <button class="button-player" id="btn" value="scissors">
+            <div>
+                <div class="btnScissor">✌</div>
+                <h3>SCISSORS</h3>
+            </div>
+        </button>
+    </div>
+    <div class="score-container">
+        <div class="score-box">
+            <div class="playerScore">0</div>
+            <div class="sign">Player</div>
+        </div>
+        <div class="score-box">X</div>
+        <div class="score-box">
+            <div class="computerScore">0</div>
+            <div class="sign">Computer</div>
+        </div>
+    </div>
+    <div class="scoreFinal">
+        <button class="playAgain" onclick="resetGame()">Play again!?</button>
+        <div class="score-res"></div>
+    </div>
+    <div class="footer">
+        <p>Copyright &copy; Yuri Souza</p>
+        <a href="https://github.com/YuriSouzaDev" target="_blank">
+            <i class="fab fa-github" aria-hidden="true"></i></a>
+    </div>
     <script src="./script.js">
     </script>
 </body>
 </html>
+
